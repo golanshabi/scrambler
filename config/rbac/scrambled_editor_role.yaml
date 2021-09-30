@@ -1,0 +1,24 @@
+# permissions for end users to edit scrambleds.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: scrambled-editor-role
+rules:
+- apiGroups:
+  - batch.github.com.golanshabi
+  resources:
+  - scrambleds
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - batch.github.com.golanshabi
+  resources:
+  - scrambleds/status
+  verbs:
+  - get

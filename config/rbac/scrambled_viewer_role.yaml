@@ -1,0 +1,20 @@
+# permissions for end users to view scrambleds.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: scrambled-viewer-role
+rules:
+- apiGroups:
+  - batch.github.com.golanshabi
+  resources:
+  - scrambleds
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - batch.github.com.golanshabi
+  resources:
+  - scrambleds/status
+  verbs:
+  - get
