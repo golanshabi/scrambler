@@ -2,5 +2,6 @@ apiVersion: batch.github.com.golanshabi/v1
 kind: Scrambled
 metadata:
   name: scrambled-sample
+  namespace: scramble-app
 spec:
   clean-word: sixaxis
