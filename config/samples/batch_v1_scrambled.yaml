@@ -4,4 +4,4 @@ metadata:
   name: scrambled-sample
   namespace: scramble-app
 spec:
-  clean-word: should be y here - x
+  clean-word: xxxxxxxx
